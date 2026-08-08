@@ -11,8 +11,8 @@ https://docs.spring.io/spring-ai/reference/api/chat/openai-chat.html
 
 -----------------------------------------------------------------------------------------------------
 
-#Deploying
-----------
+#Deploying In Docker
+--------------------
 - Initially using Dockerfile to generate the img.
 - To manage multiple images/services we have moved to docker-compose file
 - docker-compose contains multiple services (ollama, spring-ai: generated based upon the Dockerfile)
@@ -32,3 +32,4 @@ https://docs.spring.io/spring-ai/reference/api/chat/openai-chat.html
 - used to publish our img in docker hub
   docker tag spring-ai sathyabama40110529/spring-ai:latest ; docker tag <imp> <username>/<img>:<version>
   docker push sathyabama40110529/spring-ai:latest ; docker push <username>/<img>:<version>
+  docker pull sathyabama40110529/spring-ai:latest ; docker pull <username>/<img>:<version>
